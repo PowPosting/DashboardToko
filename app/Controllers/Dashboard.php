@@ -18,11 +18,28 @@ class Dashboard extends BaseController
 
     public function index()
     {
+        // Get total counts
+        $totalUsers = $this->userModel->countAllResults();
+        $totalProducts = $this->productModel->countAllResults();
+
+        // Get recent users (last 5)
+        $recentUsers = $this->userModel
+            ->orderBy('created_at', 'DESC')
+            ->limit(5)
+            ->findAll();
+
+        // Get recent products (last 5)
+        $recentProducts = $this->productModel
+            ->orderBy('created_at', 'DESC')
+            ->limit(5)
+            ->findAll();
+
         $data = [
-            'totalUsers' => $this->userModel->countAll(),
-            'totalProducts' => $this->productModel->countAll(),
-            'recentUsers' => $this->userModel->orderBy('created_at', 'DESC')->limit(5)->findAll(),
-            'recentProducts' => $this->productModel->orderBy('created_at', 'DESC')->limit(5)->findAll()
+            'title' => 'Dashboard',
+            'totalUsers' => $totalUsers,
+            'totalProducts' => $totalProducts,
+            'recentUsers' => $recentUsers,
+            'recentProducts' => $recentProducts
         ];
 
         return view('dashboard/index', $data);
