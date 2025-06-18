@@ -36,7 +36,7 @@ Password: admin1
 👥 Anggota Kelompok
 
 - **Mukhamad Diva M.A** — *Backend Developer*  
-  Bertanggung jawab atas pengelolaan proyek, perancangan REST API, serta fitur login, manajemen produk, dan transaksi.
+  Bertanggung jawab atas pengelolaan proyek, perancangan REST API, serta fitur login, manajemen produk,dan manajemen user.
 
 - **Revanda Agastar Wijaya** — *Frontend Developer*  
   Mengembangkan tampilan antarmuka (UI) dan integrasi dengan API backend.
