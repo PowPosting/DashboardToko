@@ -6,8 +6,7 @@ Aplikasi Inventori Toko ini merupakan sistem informasi berbasis web yang dibangu
 
 ✅ Manajemen Data Produk  
 ✅ Manajemen Kategori Barang  
-✅ REST API CRUD Produk  
-✅ Upload Gambar Produk  
+✅ REST API CRUD Produk   
 ✅ Validasi Data  
 ✅ Status Produk (Aktif/Nonaktif)  
 ✅ Tanggal Otomatis (Created/Updated)  
@@ -24,14 +23,15 @@ Aplikasi Inventori Toko ini merupakan sistem informasi berbasis web yang dibangu
 Cara Menjalankan
 1. Clone repository ini.
 2. Jalankan `composer install`.
-3. Atur konfigurasi database di `.env`.
-4. Jalankan dengan `php spark serve`.
+3. import database yang berada di folder dengan nama 'toko'
+4. Atur konfigurasi database di `.env`.
+5. Jalankan dengan `php spark serve`.
 
 🔐 Akun Login Dummy
 Gunakan data berikut untuk mencoba login ke sistem:
 
-Username: admin
-Password: admin123
+Username: admin1
+Password: admin1
 
 👥 Anggota Kelompok
 
@@ -53,3 +53,4 @@ Password: admin123
 📷 Screenshot Aplikasi
 
 ![Screenshot (817)](https://github.com/user-attachments/assets/11ee9265-fcfe-46e2-9bf8-be652043b329)
+
