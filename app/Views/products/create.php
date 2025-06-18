@@ -39,8 +39,8 @@ $this->section('content');
 
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <label for="quantity" class="form-label">Stok</label>
-                                <input type="number" class="form-control" id="quantity" name="quantity" 
+                                <label for="stock" class="form-label">Stok</label>
+                                <input type="number" class="form-control" id="stock" name="stock" 
                                        placeholder="Jumlah stok" min="0" required>
                             </div>
                             
@@ -66,8 +66,8 @@ $this->section('content');
                             <div class="col-md-6 mb-3">
                                 <label for="status" class="form-label">Status</label>
                                 <select class="form-select" id="status" name="status">
-                                    <option value="aktif">Aktif</option>
-                                    <option value="nonaktif">Non-aktif</option>
+                                    <option value="active">Aktif</option>
+                                    <option value="inactive">Inactive</option>
                                     <option value="draft">Draft</option>
                                 </select>
                             </div>

@@ -16,7 +16,7 @@ $this->section('content');
         <div class="col-md-6 mb-3">
             <div class="card">
                 <div class="card-body text-center">
-                    <h3 class="mb-1"><?= $totalUsers ?></h3>
+                    <h3 class="mb-1"><?= isset($totalUsers) ?></h3>
                     <p class="text-muted mb-0">Total Pengguna</p>
                 </div>
             </div>
@@ -24,7 +24,7 @@ $this->section('content');
         <div class="col-md-6 mb-3">
             <div class="card">
                 <div class="card-body text-center">
-                    <h3 class="mb-1"><?= $totalProducts ?></h3>
+                    <h3 class="mb-1"><?= isset($totalProducts) ?></h3>
                     <p class="text-muted mb-0">Total Produk</p>
                 </div>
             </div>

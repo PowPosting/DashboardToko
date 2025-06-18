@@ -25,14 +25,13 @@ $this->section('content');
                                 <label for="username" class="form-label">Username</label>
                                 <input type="text" class="form-control" id="username" name="username" 
                                        placeholder="Masukkan username" required>
-                                <div class="form-text">Username harus unik dan minimal 3 karakter</div>
                             </div>
                             
                             <div class="col-md-6 mb-3">
                                 <label for="email" class="form-label">Email</label>
                                 <input type="email" class="form-control" id="email" name="email" 
                                        placeholder="Masukkan alamat email" required>
-                                <div class="form-text">Email harus valid</div>
+                              
                             </div>
                         </div>
 
@@ -46,9 +45,9 @@ $this->section('content');
                             
                             <div class="col-md-6 mb-3">
                                 <label for="confirm_password" class="form-label">Konfirmasi Password</label>
-                                <input type="password" class="form-control" id="confirm_password" name="confirm_password" 
+                                <input type="password" class="form-conssstrol" id="confirm_password" name="confirm_password" 
                                        placeholder="Konfirmasi password" required>
-                                <div class="form-text">Harus sama dengan password</div>
+                
                             </div>
                         </div>
 
@@ -60,7 +59,7 @@ $this->section('content');
                                     <option value="admin">Admin</option>
                                     <option value="moderator">Moderator</option>
                                 </select>
-                                <div class="form-text">Pilih peran dan hak akses pengguna</div>
+                                
                             </div>
                             
                             <div class="col-md-6 mb-3">
@@ -70,7 +69,7 @@ $this->section('content');
                                     <option value="inactive">Tidak Aktif</option>
                                     <option value="pending">Menunggu</option>
                                 </select>
-                                <div class="form-text">Status akun pengguna</div>
+                  
                             </div>
                         </div>
 

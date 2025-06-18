@@ -31,10 +31,9 @@ class ProductController extends Controller
             'name' => $this->request->getPost('name'),
             'description' => $this->request->getPost('description'),
             'price' => $this->request->getPost('price'),
-            'quantity' => $this->request->getPost('quantity') ?? 0,
+            'stock' => $this->request->getPost('stock') ?? 0,
             'category' => $this->request->getPost('category'),
             'status' => $this->request->getPost('status') ?? 'active',
-            'sku' => $this->request->getPost('sku')
         ]);
         return redirect()->to('/products');
     }
@@ -51,10 +50,9 @@ class ProductController extends Controller
             'name' => $this->request->getPost('name'),
             'description' => $this->request->getPost('description'),
             'price' => $this->request->getPost('price'),
-            'quantity' => $this->request->getPost('quantity') ?? 0,
+            'stock' => $this->request->getPost('stock') ?? 0,
             'category' => $this->request->getPost('category'),
-            'status' => $this->request->getPost('status') ?? 'active',
-            'sku' => $this->request->getPost('sku')
+            'status' => $this->request->getPost('status') ?? 'active'
         ]);
         return redirect()->to('/products');
     }

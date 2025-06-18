@@ -28,7 +28,7 @@
                                 <input type="text" class="form-control" id="username" name="username" 
                                        value="<?= esc($user['username']) ?>" 
                                        placeholder="Masukkan username" required>
-                                <div class="form-text">Username harus unik dan minimal 3 karakter</div>
+                                
                             </div>
                             
                             <div class="col-md-6 mb-3">
@@ -36,7 +36,7 @@
                                 <input type="email" class="form-control" id="email" name="email" 
                                        value="<?= esc($user['email']) ?>"
                                        placeholder="Masukkan alamat email" required>
-                                <div class="form-text">Email harus valid</div>
+                                
                             </div>
                         </div>
 
@@ -45,14 +45,14 @@
                                 <label for="password" class="form-label">Password Baru</label>
                                 <input type="password" class="form-control" id="password" name="password" 
                                        placeholder="Kosongkan jika tidak ingin mengubah password">
-                                <div class="form-text">Kosongkan jika tidak ingin mengubah password</div>
+                              
                             </div>
                             
                             <div class="col-md-6 mb-3">
                                 <label for="confirm_password" class="form-label">Konfirmasi Password Baru</label>
                                 <input type="password" class="form-control" id="confirm_password" name="confirm_password" 
                                        placeholder="Konfirmasi password baru">
-                                <div class="form-text">Harus sama dengan password baru jika diisi</div>
+                               
                             </div>
                         </div>
 
@@ -64,7 +64,7 @@
                                     <option value="admin" <?= ($user['role'] ?? '') === 'admin' ? 'selected' : '' ?>>Admin</option>
                                     <option value="moderator" <?= ($user['role'] ?? '') === 'moderator' ? 'selected' : '' ?>>Moderator</option>
                                 </select>
-                                <div class="form-text">Pilih peran dan hak akses pengguna</div>
+                                
                             </div>
                             
                             <div class="col-md-6 mb-3">
@@ -74,7 +74,7 @@
                                     <option value="inactive" <?= ($user['status'] ?? '') === 'inactive' ? 'selected' : '' ?>>Tidak Aktif</option>
                                     <option value="pending" <?= ($user['status'] ?? '') === 'pending' ? 'selected' : '' ?>>Menunggu</option>
                                 </select>
-                                <div class="form-text">Status akun pengguna</div>
+                           
                             </div>
                         </div>
 
@@ -83,13 +83,6 @@
                             <input type="text" class="form-control" id="full_name" name="full_name" 
                                    value="<?= esc($user['full_name'] ?? '') ?>"
                                    placeholder="Masukkan nama lengkap">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="phone" class="form-label">Nomor Telepon (Opsional)</label>
-                            <input type="tel" class="form-control" id="phone" name="phone" 
-                                   value="<?= esc($user['phone'] ?? '') ?>"
-                                   placeholder="Masukkan nomor telepon">
                         </div>
 
                         <hr class="my-4">

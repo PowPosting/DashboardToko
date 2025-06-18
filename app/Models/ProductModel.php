@@ -8,7 +8,7 @@ class ProductModel extends Model
 {
     protected $table = 'products';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['name', 'description', 'price', 'stock'];
+    protected $allowedFields = ['name', 'description', 'price', 'stock','status','category_id'];
     protected $returnType = 'array';
     protected $useTimestamps = true;
 

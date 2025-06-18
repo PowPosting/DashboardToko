@@ -67,8 +67,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
-                    <h5>My CI4 Web App</h5>
-                    <p class="mb-0">Built with CodeIgniter 4 & Bootstrap 5</p>
+                    <h5>Dashboard Toko Super</h5>
+                    <p class="mb-0"></p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <p class="mb-0">&copy; <?= date('Y') ?> All rights reserved.</p>

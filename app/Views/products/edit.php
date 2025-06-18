@@ -41,10 +41,11 @@ $this->section('content');
 
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <label for="quantity" class="form-label">Stok</label>
-                                <input type="number" class="form-control" id="quantity" name="quantity" 
-                                       value="<?= $product['quantity'] ?? 0; ?>"
-                                       placeholder="Jumlah stok" min="0" required>
+                                <label for="stock" class="form-label">Stok</label>
+                                <input type="number" class="form-control" id="stock" name="stock" 
+                                       value="<?= isset($product['stock']) ? intval($product['stock']) : 0; ?>"
+                                       placeholder="Jumlah stok" min="0" step="1" required>
+                                <div class="form-text">Masukkan jumlah stok produk</div>
                             </div>
                             
                             <div class="col-md-6 mb-3">
@@ -69,8 +70,8 @@ $this->section('content');
                             <div class="col-md-6 mb-3">
                                 <label for="status" class="form-label">Status</label>
                                 <select class="form-select" id="status" name="status">
-                                    <option value="aktif" <?= ($product['status'] ?? '') === 'aktif' ? 'selected' : ''; ?>>Aktif</option>
-                                    <option value="nonaktif" <?= ($product['status'] ?? '') === 'nonaktif' ? 'selected' : ''; ?>>Non-aktif</option>
+                                    <option value="active" <?= ($product['status'] ?? '') === 'aktif' ? 'selected' : ''; ?>>Aktif</option>
+                                    <option value="inactive" <?= ($product['status'] ?? '') === 'nonaktif' ? 'selected' : ''; ?>>Non-aktif</option>
                                     <option value="draft" <?= ($product['status'] ?? '') === 'draft' ? 'selected' : ''; ?>>Draft</option>
                                 </select>
                             </div>

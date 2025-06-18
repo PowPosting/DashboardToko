@@ -28,9 +28,9 @@ class UserController extends Controller
     public function store()
     {
         $this->userModel->save([
-            'name' => $this->request->getPost('name'),
+            'username' => $this->request->getPost('username'),
             'email' => $this->request->getPost('email'),
-            'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
+            'full_name' => $this->request->getPost('full_name'),
         ]);
         return redirect()->to('/users');
     }
@@ -44,8 +44,10 @@ class UserController extends Controller
     public function update($id)
     {
         $this->userModel->update($id, [
-            'name' => $this->request->getPost('name'),
+            'username' => $this->request->getPost('username'),
             'email' => $this->request->getPost('email'),
+            'full_name' => $this->request->getPost('full_name'),
+
         ]);
         return redirect()->to('/users');
     }

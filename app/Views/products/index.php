@@ -67,16 +67,16 @@ $this->section('content');
                                     </td>
                                     <td>
                                         <?php 
-                                        $stock = $product['quantity'] ?? 0;
+                                        $stock = $product['stock'] ?? 0;
                                         $stockClass = $stock > 10 ? 'success' : ($stock > 0 ? 'warning' : 'danger');
                                         ?>
                                         <span class="badge bg-<?= $stockClass ?>"><?= $stock; ?></span>
                                     </td>
                                     <td>
                                         <?php 
-                                        $status = $product['status'] ?? 'aktif';
-                                        $statusClass = $status === 'aktif' ? 'success' : ($status === 'draft' ? 'warning' : 'secondary');
-                                        $statusText = $status === 'aktif' ? 'Aktif' : ($status === 'draft' ? 'Draft' : 'Non-aktif');
+                                        $status = $product['status'] ?? 'active';
+                                        $statusClass = $status === 'active' ? 'success' : ($status === 'draft' ? 'warning' : 'secondary');
+                                        $statusText = $status === 'active' ? 'active' : ($status === 'draft' ? 'Draft' : 'inactive');
                                         ?>
                                         <span class="badge bg-<?= $statusClass ?>"><?= $statusText; ?></span>
                                     </td>
