@@ -16,12 +16,10 @@ $this->section('content');
         <div class="card-body">
             <h4 class="card-title">Misi Kami</h4>
             <p class="text-muted">
-                Selamat datang di aplikasi kami. Kami adalah tim yang berdedikasi bekerja sama 
-                untuk memberikan layanan terbaik dan solusi inovatif bagi klien kami. Tujuan kami adalah 
-                menghadirkan produk berkualitas tinggi yang melampaui ekspektasi.
+                Kami adalah tim mahasiswa yang mengembangkan aplikasi inventori toko berbasis web menggunakan CodeIgniter 4 dan REST API. Aplikasi ini dirancang untuk membantu toko dalam mengelola stok barang, transaksi, dan laporan dengan lebih efisien.
             </p>
             <p class="mb-0">
-                Kami percaya pada perbaikan berkelanjutan, kolaborasi, dan keunggulan dalam segala hal yang kami lakukan.
+                Kami berkomitmen untuk menghadirkan aplikasi yang andal, aman, dan terintegrasi, sehingga pemilik toko dapat mengambil keputusan bisnis yang tepat berdasarkan data real-time. Dengan fitur-fitur yang lengkap dan dukungan teknis profesional, kami ingin menjadi mitra terpercaya dalam mendukung pertumbuhan dan kesuksesan bisnis Anda.
             </p>
         </div>
     </div>
@@ -38,10 +36,10 @@ $this->section('content');
                         <div class="mb-3">
                             <i class="bi bi-person-circle display-4 text-primary"></i>
                         </div>
-                        <h6>John Doe</h6>
-                        <span class="badge bg-primary mb-2">Manajer Proyek</span>
+                        <h6>Mukhamad Diva M.A</h6>
+                        <span class="badge bg-primary mb-2">Backend Developer</span>
                         <p class="text-muted small mb-0">
-                            Memimpin perencanaan proyek dan koordinasi tim untuk memastikan keberhasilan delivery.
+                            Bertanggung jawab atas pengelolaan proyek, perancangan REST API, dan pembuatan fitur backend seperti login, manajemen user, dan manajemen produk.
                         </p>
                     </div>
                 </div>
@@ -51,10 +49,10 @@ $this->section('content');
                         <div class="mb-3">
                             <i class="bi bi-person-circle display-4 text-success"></i>
                         </div>
-                        <h6>Jane Smith</h6>
-                        <span class="badge bg-success mb-2">Lead Developer</span>
+                        <h6>Revanda Agastar Wijaya</h6>
+                        <span class="badge bg-success mb-2">Frontend Developer</span>
                         <p class="text-muted small mb-0">
-                            Mengawasi proses pengembangan dan memastikan kualitas kode serta best practices.
+                            Mengembangkan tampilan antarmuka pengguna (UI) dan mengintegrasikannya dengan API backend.
                         </p>
                     </div>
                 </div>
@@ -64,10 +62,10 @@ $this->section('content');
                         <div class="mb-3">
                             <i class="bi bi-person-circle display-4 text-warning"></i>
                         </div>
-                        <h6>Emily Johnson</h6>
-                        <span class="badge bg-warning mb-2">UI/UX Designer</span>
+                        <h6>Mutiara Novitasari</h6>
+                        <span class="badge bg-warning mb-2">Database Administrator</span>
                         <p class="text-muted small mb-0">
-                            Menciptakan antarmuka pengguna yang intuitif dan meningkatkan desain pengalaman pengguna.
+                            Menciptakan dan mengelola struktur database, serta memastikan keamanan dan integritas data.
                         </p>
                     </div>
                 </div>
@@ -77,10 +75,10 @@ $this->section('content');
                         <div class="mb-3">
                             <i class="bi bi-person-circle display-4 text-info"></i>
                         </div>
-                        <h6>Michael Brown</h6>
-                        <span class="badge bg-info mb-2">Database Admin</span>
+                        <h6>Nirmala Putri</h6>
+                        <span class="badge bg-info mb-2">Quality Assurance</span>
                         <p class="text-muted small mb-0">
-                            Mengelola sistem database dan memastikan integritas data serta performa.
+                            Melakukan pengujian fungsionalitas aplikasi, memastikan semua fitur berjalan sesuai kebutuhan, serta melaporkan bug.
                         </p>
                     </div>
                 </div>
@@ -90,10 +88,10 @@ $this->section('content');
                         <div class="mb-3">
                             <i class="bi bi-person-circle display-4 text-danger"></i>
                         </div>
-                        <h6>Sarah Wilson</h6>
-                        <span class="badge bg-danger mb-2">Quality Assurance</span>
+                        <h6>Firdaus Gozali</h6>
+                        <span class="badge bg-danger mb-2">Dokumentasi & Deployment</span>
                         <p class="text-muted small mb-0">
-                            Bertanggung jawab untuk testing aplikasi dan memastikan kualitas produk sebelum release.
+                            Membuat dokumentasi teknis dan user guide, serta menangani proses deployment aplikasi ke server lokal maupun hosting.
                         </p>
                     </div>
                 </div>
