@@ -51,6 +51,12 @@ Password: admin1
   Membuat dokumentasi teknis dan user guide, serta menangani deployment aplikasi ke server atau hosting.
 
 📷 Screenshot Aplikasi
-
+![image](https://github.com/user-attachments/assets/3705b465-45f3-4a96-93c4-a41efa621cc0)
 ![Screenshot (817)](https://github.com/user-attachments/assets/11ee9265-fcfe-46e2-9bf8-be652043b329)
+![image](https://github.com/user-attachments/assets/6538791f-b27f-4a96-98aa-821cef39fd12)
+![image](https://github.com/user-attachments/assets/82cfb59a-167f-4545-96ca-16a02452761d)
+![image](https://github.com/user-attachments/assets/81266e71-f420-4436-8260-c236ff80e296)
+
+
+
 
