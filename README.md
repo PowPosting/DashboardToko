@@ -1,64 +1,55 @@
-<<<<<<< HEAD
-# CodeIgniter 4 Framework
+🛒 Aplikasi Inventori Toko - CodeIgniter 4
 
-## What is CodeIgniter?
+Aplikasi Inventori Toko ini merupakan sistem informasi berbasis web yang dibangun menggunakan framework CodeIgniter 4 dan telah terintegrasi dengan REST API. Aplikasi ini memungkinkan pengguna untuk mengelola data produk, kategori, dan stok barang dengan mudah dan efisien.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+📌 Fitur Utama
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+✅ Manajemen Data Produk  
+✅ Manajemen Kategori Barang  
+✅ REST API CRUD Produk  
+✅ Upload Gambar Produk  
+✅ Validasi Data  
+✅ Status Produk (Aktif/Nonaktif)  
+✅ Tanggal Otomatis (Created/Updated)  
+✅ Autentikasi Login Admin  
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+💻 Teknologi yang Digunakan
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+- CodeIgniter 4
+- MySQL
+- Bootstrap 5
+- RESTful API
+- Postman (untuk testing API)
 
-## Important Change with index.php
+Cara Menjalankan
+1. Clone repository ini.
+2. Jalankan `composer install`.
+3. Atur konfigurasi database di `.env`.
+4. Jalankan dengan `php spark serve`.
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+🔐 Akun Login Dummy
+Gunakan data berikut untuk mencoba login ke sistem:
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+Username: admin
+Password: admin123
 
-**Please** read the user guide for a better explanation of how CI4 works!
+👥 Anggota Kelompok
 
-## Repository Management
+- **Mukhamad Diva M.A** — *Backend Developer*  
+  Bertanggung jawab atas pengelolaan proyek, perancangan REST API, serta fitur login, manajemen produk, dan transaksi.
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+- **Revanda Agastar Wijaya** — *Frontend Developer*  
+  Mengembangkan tampilan antarmuka (UI) dan integrasi dengan API backend.
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+- **Mutiara Novitasari** — *Database Administrator*  
+  Membuat dan mengelola struktur database, serta menjaga keamanan dan integritas data.
 
-## Contributing
+- **Nirmala Putri** — *Quality Assurance*  
+  Menguji fungsionalitas aplikasi, memastikan fitur berjalan dengan baik, serta mencatat bug.
 
-We welcome contributions from the community.
+- **Firdaus Gozali** — *Dokumentasi & Deployment*  
+  Membuat dokumentasi teknis dan user guide, serta menangani deployment aplikasi ke server atau hosting.
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+📷 Screenshot Aplikasi
 
-## Server Requirements
-
-PHP version 8.1 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
-=======
-# DashboardToko
->>>>>>> bf13a37aaf8dd070a5405a0e5053275225773d98
+![Screenshot (817)](https://github.com/user-attachments/assets/11ee9265-fcfe-46e2-9bf8-be652043b329)
