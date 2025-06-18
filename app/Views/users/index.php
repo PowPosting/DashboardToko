@@ -14,7 +14,8 @@ $this->section('content');
     <!-- Action Bar -->
     <div class="row mb-4">
         <div class="col-md-6">
-            <a href="<?= site_url('users/create'); ?>" class="btn btn-success">
+            <a href="<?= base_url('users/create'); ?>" class="btn btn-success">
+                <i class="bi bi-plus-circle me-1"></i>
                 Tambah Pengguna Baru
             </a>
         </div>
@@ -43,7 +44,7 @@ $this->section('content');
                             <th>Nama Lengkap</th>
                             <th>Email</th>
                             <th>Peran</th>
-                            <th>Status</th>
+                            <th>Tgl Dibuat</th>
                             <th class="text-center">Aksi</th>
                         </tr>
                     </thead>
@@ -55,7 +56,7 @@ $this->section('content');
                                         <span class="badge bg-secondary"><?= esc($user['id']); ?></span>
                                     </td>
                                     <td>
-                                        <strong><?= esc($user['username'] ?? $user['name']); ?></strong>
+                                        <strong><?= esc($user['username']); ?></strong>
                                     </td>
                                     <td>
                                         <span class="text-muted"><?= esc($user['full_name'] ?? 'Tidak diisi'); ?></span>
@@ -66,45 +67,40 @@ $this->section('content');
                                         </a>
                                     </td>
                                     <td>
-                                        <?php 
-                                        $role = $user['role'] ?? 'user';
-                                        $roleClass = $role === 'admin' ? 'danger' : ($role === 'moderator' ? 'warning' : 'primary');
-                                        $roleText = $role === 'admin' ? 'Admin' : ($role === 'moderator' ? 'Moderator' : 'Pengguna');
-                                        ?>
-                                        <span class="badge bg-<?= $roleClass ?>"><?= $roleText; ?></span>
+                                        <span class="badge bg-danger">Admin</span>
                                     </td>
+                                    
                                     <td>
-                                        <?php 
-                                        $status = $user['status'] ?? 'active';
-                                        $statusClass = $status === 'active' ? 'success' : ($status === 'pending' ? 'warning' : 'secondary');
-                                        $statusText = $status === 'active' ? 'Aktif' : ($status === 'pending' ? 'Menunggu' : 'Tidak Aktif');
-                                        ?>
-                                        <span class="badge bg-<?= $statusClass ?>"><?= $statusText; ?></span>
+                                        <small class="text-muted">
+                                            <?= isset($user['created_at']) ? date('d M Y', strtotime($user['created_at'])) : 'N/A' ?>
+                                        </small>
                                     </td>
                                     <td class="text-center">
                                         <div class="btn-group" role="group">
-                                            <a href="<?= site_url('users/edit/' . $user['id']); ?>" 
+                                            <a href="<?= base_url('users/edit/' . $user['id']); ?>" 
                                                class="btn btn-sm btn-outline-warning" 
                                                title="Edit Pengguna">
                                                 <i class="bi bi-pencil"></i>
                                             </a>
-                                            <a href="<?= site_url('users/delete/' . $user['id']); ?>" 
-                                               class="btn btn-sm btn-outline-danger" 
-                                               title="Hapus Pengguna"
-                                               onclick="return confirm('Apakah Anda yakin ingin menghapus pengguna ini?');">
+                                            <button type="button" 
+                                                    class="btn btn-sm btn-outline-danger" 
+                                                    title="Hapus Pengguna"
+                                                    onclick="confirmDelete(<?= $user['id']; ?>, '<?= esc($user['username']); ?>')">
                                                 <i class="bi bi-trash"></i>
-                                            </a>
+                                            </button>
                                         </div>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>
                         <?php else: ?>
                             <tr>
-                                <td colspan="7" class="text-center py-4">
+                                <td colspan="8" class="text-center py-4">
                                     <div class="text-muted">
+                                        <i class="bi bi-person-x display-4 text-muted mb-3"></i>
                                         <h5>Tidak ada pengguna</h5>
                                         <p>Mulai dengan menambahkan pengguna pertama</p>
-                                        <a href="<?= site_url('users/create'); ?>" class="btn btn-primary">
+                                        <a href="<?= base_url('users/create'); ?>" class="btn btn-primary">
+                                            <i class="bi bi-plus-circle me-1"></i>
                                             Tambah Pengguna
                                         </a>
                                     </div>
@@ -116,10 +112,12 @@ $this->section('content');
             </div>
         </div>
     </div>
-</div>
 
-<!-- Search Script -->
+   
+
+<!-- Search and Delete Scripts -->
 <script>
+// Search functionality
 document.getElementById('searchInput').addEventListener('keyup', function() {
     const searchValue = this.value.toLowerCase();
     const tableRows = document.querySelectorAll('tbody tr');
@@ -129,6 +127,15 @@ document.getElementById('searchInput').addEventListener('keyup', function() {
         row.style.display = text.includes(searchValue) ? '' : 'none';
     });
 });
+
+// Delete confirmation
+function confirmDelete(userId, userName) {
+    document.getElementById('userName').textContent = userName;
+    document.getElementById('confirmDeleteBtn').href = '<?= base_url('users/delete/'); ?>' + userId;
+    
+    const deleteModal = new bootstrap.Modal(document.getElementById('deleteModal'));
+    deleteModal.show();
+}
 </script>
 
 <?php
