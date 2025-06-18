@@ -98,8 +98,27 @@ INSERT INTO `products` (`id`, `name`, `description`, `price`, `stock`, `category
 (36, 'Speaker Aktif Simbadda', 'Speaker dengan bass kencang', 649000.00, 7, 1, 'simbadda_speaker.jpg', 'active', '2025-06-18 14:50:16', '2025-06-18 14:50:16'),
 (37, 'Laptop Lenovo IdeaPad 3', 'Laptop untuk pelajar dan kantor', 5899000.00, 5, 1, 'lenovo_ideapad.jpg', 'active', '2025-06-18 14:50:16', '2025-06-18 14:50:16'),
 (38, 'Smartphone Oppo A57', 'HP stylish dengan baterai tahan lama', 2799000.00, 10, 1, 'oppo_a57.jpg', 'active', '2025-06-18 14:50:16', '2025-06-18 14:50:16'),
-(39, 'Drone DJI Mini SE', 'Drone ringan untuk pemula', 4599000.00, 2, 1, 'dji_mini.jpg', 'active', '2025-06-18 14:50:16', '2025-06-18 14:50:16');
-
+(39, 'Drone DJI Mini SE', 'Drone ringan untuk pemula', 4599000.00, 2, 1, 'dji_mini.jpg', 'active', '2025-06-18 14:50:16', '2025-06-18 14:50:16'),
+(40, 'Earphone Realme Buds', 'Earphone in-ear dengan bass kuat', 129000.00, 25, 1, 'realme_buds.jpg', 'active', '2025-06-18 14:55:00', '2025-06-18 14:55:00'),
+(41, 'Tablet Samsung Galaxy Tab A7', 'Tablet multimedia 10.4 inci', 3299000.00, 7, 1, 'galaxy_tab_a7.jpg', 'active', '2025-06-18 14:55:00', '2025-06-18 14:55:00'),
+(42, 'Smartwatch Huawei Band 8', 'Smartwatch dengan fitur kebugaran lengkap', 549000.00, 13, 1, 'huawei_band8.jpg', 'active', '2025-06-18 14:55:00', '2025-06-18 14:55:00'),
+(43, 'Gimbal Zhiyun Smooth 5', 'Gimbal smartphone profesional', 1699000.00, 5, 1, 'zhiyun_smooth5.jpg', 'active', '2025-06-18 14:55:00', '2025-06-18 14:55:00'),
+(44, 'Stabilizer Kamera Ulanzi', 'Stabilizer ringan untuk vlog', 379000.00, 10, 1, 'ulanzi_stabilizer.jpg', 'active', '2025-06-18 14:55:00', '2025-06-18 14:55:00'),
+(45, 'Lampu Ring Light 33cm', 'Lampu selfie dengan tripod', 99000.00, 20, 1, 'ring_light.jpg', 'active', '2025-06-18 14:55:00', '2025-06-18 14:55:00'),
+(46, 'Webcam Logitech C270', 'Webcam HD dengan mikrofon', 349000.00, 8, 1, 'logitech_c270.jpg', 'active', '2025-06-18 14:55:00', '2025-06-18 14:55:00'),
+(47, 'Laptop Acer Aspire 5', 'Laptop kerja dan hiburan harian', 6399000.00, 6, 1, 'acer_aspire5.jpg', 'active', '2025-06-18 14:55:00', '2025-06-18 14:55:00'),
+(48, 'Monitor Samsung 27 Inch', 'Monitor FHD dengan panel VA', 2299000.00, 4, 1, 'samsung_monitor.jpg', 'active', '2025-06-18 14:55:00', '2025-06-18 14:55:00'),
+(49, 'Mic Condenser BM800', 'Mic studio untuk podcast dan rekaman', 259000.00, 15, 1, 'bm800_mic.jpg', 'active', '2025-06-18 14:55:00', '2025-06-18 14:55:00'),
+(50, 'Keyboard Wireless Logitech K380', 'Keyboard ringkas untuk multi device', 449000.00, 12, 1, 'logitech_k380.jpg', 'active', '2025-06-18 14:55:00', '2025-06-18 14:55:00'),
+(51, 'Router TP-Link Archer C6', 'Router dual band 1200Mbps', 459000.00, 9, 1, 'tplink_c6.jpg', 'active', '2025-06-18 14:55:00', '2025-06-18 14:55:00'),
+(52, 'Switch Hub 8 Port D-Link', 'Switch jaringan untuk kantor', 239000.00, 11, 1, 'dlink_switch.jpg', 'active', '2025-06-18 14:55:00', '2025-06-18 14:55:00'),
+(53, 'USB Hub 4 Port Orico', 'Hub USB untuk laptop dan PC', 99000.00, 18, 1, 'orico_hub.jpg', 'active', '2025-06-18 14:55:00', '2025-06-18 14:55:00'),
+(54, 'Tinta Printer Epson 003', 'Tinta original untuk printer Epson L series', 69000.00, 50, 1, 'epson_003.jpg', 'active', '2025-06-18 14:55:00', '2025-06-18 14:55:00'),
+(55, 'Kabel HDMI Vention 2M', 'Kabel HDMI 2 meter untuk monitor/TV', 59000.00, 22, 1, 'vention_hdmi.jpg', 'active', '2025-06-18 14:55:00', '2025-06-18 14:55:00'),
+(56, 'Cooling Pad Laptop NYK', 'Pendingin laptop dengan 5 kipas', 149000.00, 17, 1, 'nyk_cooler.jpg', 'active', '2025-06-18 14:55:00', '2025-06-18 14:55:00'),
+(57, 'UPS APC 650VA', 'UPS untuk perlindungan listrik komputer', 899000.00, 3, 1, 'apc_ups.jpg', 'active', '2025-06-18 14:55:00', '2025-06-18 14:55:00'),
+(58, 'Tablet Drawing Wacom CTL-4100', 'Tablet gambar digital untuk desain', 1049000.00, 6, 1, 'wacom_ctl4100.jpg', 'active', '2025-06-18 14:55:00', '2025-06-18 14:55:00'),
+(59, 'Laptop HP 14s', 'Laptop pelajar dengan Ryzen 3', 5999000.00, 7, 1, 'hp_14s.jpg', 'active', '2025-06-18 14:55:00', '2025-06-18 14:55:00');
 -- --------------------------------------------------------
 
 --
